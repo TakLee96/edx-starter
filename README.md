@@ -131,3 +131,12 @@ sudo mongod -repair --config /etc/mongod.conf
 sudo chown -R mongodb:mongodb /edx/var/mongo/.
 sudo /etc/init.d/mongod start
 ```
+
+21 To use the forked version of edx-platform as origin instead of the original one, do the following (the default branch is release instead of master)
+
+```
+git remote remove origin
+git remote add origin https://github.com/saasbook/edx-platform.git
+git pull origin release
+```
+
