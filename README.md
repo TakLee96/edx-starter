@@ -49,7 +49,7 @@ went wrong.
 6 hmmm... Do we have libxmlsec1 installed? I don't think so... Let's do that manually first.
 
 ```
-vagrant up
+vagrant ssh
 sudo apt-get install libxmlsec1
 sudo apt-get install libxmlsec1-dev
 ```
